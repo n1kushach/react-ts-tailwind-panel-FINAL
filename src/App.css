@@ -1,3 +1,23 @@
 .App {
   height: 100vh;
 }
+
+:root {
+  background-color: #3AAFB9;
+} 
+
+.bg-custom-hex {
+  background-color: #093A3E;
+}
+
+.bg-custom-hex2 {
+  background-color: #3AAFB9;
+}
+
+.bg-custom-hex3 {
+  background-color: #97C8EB;
+}
+
+#profile {
+  border-color: #001011;
+}

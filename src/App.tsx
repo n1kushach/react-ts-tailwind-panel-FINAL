@@ -7,6 +7,8 @@ import { Contact } from "./pages/Contact";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AddForm from "./pages/AddForm";
+import Profile from "./pages/Profile";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="home/addform" element={<AddForm />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </div>
