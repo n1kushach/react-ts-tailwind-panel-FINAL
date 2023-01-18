@@ -16,7 +16,7 @@ export const Home = ({loggedIn, setLoggedIn} : Props) => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex ">
       home
       <button onClick={Logout}>Log Out</button>
     </div>

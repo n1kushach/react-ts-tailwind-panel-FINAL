@@ -17,7 +17,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState<boolean>(sessionStorage.getItem("emailData")==='abc@gmail.com' && sessionStorage.getItem("password")==='12345' ? true : false)
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-col lg:flex-row">
       <Router>
         {loggedIn && <Navbar /> }
         <Routes>
