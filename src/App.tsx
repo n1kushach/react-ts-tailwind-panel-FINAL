@@ -17,7 +17,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState<boolean>(sessionStorage.getItem("emailData")==='1' && sessionStorage.getItem("password")==='1' ? true : false)
 
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row h-screen">
       <Router>
         {loggedIn && <Navbar /> }
         <Routes>
