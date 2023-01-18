@@ -1,12 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Form, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-interface Props{
+interface Props {
   loggedIn: boolean;
   setLoggedIn: (value: boolean) => void;
 }
 
-export const Home = ({loggedIn, setLoggedIn} : Props) => {
+export const Home = ({ loggedIn, setLoggedIn }: Props) => {
   const navigate = useNavigate();
 
   const Logout = () => {
@@ -15,9 +16,12 @@ export const Home = ({loggedIn, setLoggedIn} : Props) => {
     setLoggedIn(false);
   };
 
+
+
+
   return (
     <div className="flex ">
-      home
+
       <button onClick={Logout}>Log Out</button>
     </div>
   );

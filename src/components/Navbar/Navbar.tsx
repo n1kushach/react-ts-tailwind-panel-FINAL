@@ -4,7 +4,7 @@ import LinkComponent from '../LinkComponent/LinkComponent'
 
 export const Navbar = () => {
   return (
-    <div className='flex flex-col bg-custom-hex h-screen min-h-[250px] w-1/6 justify-around items-center text-black '>
+    <div className='bg-sky-700 h-screen flex sm:flex-col flex-row p-10 gap-20'>
         <LinkComponent to='/home' linkName='Home' />
         <LinkComponent to='/about' linkName='About'/>
         <LinkComponent to='/profile' linkName='Profile'/>
