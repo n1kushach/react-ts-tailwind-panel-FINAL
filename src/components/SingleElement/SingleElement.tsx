@@ -9,7 +9,7 @@ export const SingleElement = (props: any) => {
   }
 
   return (
-    <div key={props.index} className="flex items-center lg:max-h-24 justify-around w-full mx-auto mt-5 bg-slate-200 p-2 rounded-md text-black">
+    <div key={props.index} className="flex items-center max-h-24 justify-around w-3/4 mx-auto mt-5 bg-slate-200 p-2 rounded-md text-black min-w-[400px]">
       <div className="flex flex-row gap-4">
         <h1>{props.firstName}</h1>
         <h1>{props.lastName}</h1>
