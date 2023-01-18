@@ -14,7 +14,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
 
-  const [loggedIn, setLoggedIn] = useState<boolean>(sessionStorage.getItem("emailData")==='abc@gmail.com' && sessionStorage.getItem("password")==='12345' ? true : false)
+  const [loggedIn, setLoggedIn] = useState<boolean>(sessionStorage.getItem("emailData")==='1' && sessionStorage.getItem("password")==='1' ? true : false)
 
   return (
     <div className="flex flex-col lg:flex-row">

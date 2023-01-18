@@ -15,11 +15,11 @@ export const Login = ({loggedIn,setLoggedIn} : Props) => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (
-      email.current.value == "abc@gmail.com" &&
-      password.current.value == "12345"
+      email.current.value == "1" &&
+      password.current.value == "1"
     ) {
-      sessionStorage.setItem("emailData", "abc@gmail.com");
-      sessionStorage.setItem("password", "12345");
+      sessionStorage.setItem("emailData", "1");
+      sessionStorage.setItem("password", "1");
       setLoggedIn(true);
       navigate("/home");
     } else {
