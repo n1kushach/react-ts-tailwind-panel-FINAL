@@ -1,7 +1,13 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Login = () => {
+
+interface Props{
+  loggedIn: boolean;
+  setLoggedIn: (value: boolean) => void;
+}
+
+export const Login = ({loggedIn,setLoggedIn} : Props) => {
   const email = useRef<any>("");
   const password = useRef<any>("");
   const navigate = useNavigate();
@@ -12,13 +18,16 @@ export const Login = () => {
       email.current.value == "abc@gmail.com" &&
       password.current.value == "12345"
     ) {
-      localStorage.setItem("emailData", "abc@gmail.com");
-      localStorage.setItem("password", "12345");
+      sessionStorage.setItem("emailData", "abc@gmail.com");
+      sessionStorage.setItem("password", "12345");
+      setLoggedIn(true);
       navigate("/home");
     } else {
       alert("Invalid Credentials")
     }
   };
+
+  
 
   return (
     <div className="h-screen flex flex-col justify-center items-center gap-4 w-full">

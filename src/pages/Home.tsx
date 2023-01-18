@@ -1,19 +1,24 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+interface Props{
+  loggedIn: boolean;
+  setLoggedIn: (value: boolean) => void;
+}
 
-export const Home = () => {
+export const Home = ({loggedIn, setLoggedIn} : Props) => {
   const navigate = useNavigate();
 
   const Logout = () => {
-    localStorage.clear();
+    sessionStorage.clear();
     navigate("/");
+    setLoggedIn(false);
   };
 
   return (
     <div className="flex">
       home
-      {/* <button onClick={Logout}>Log Out</button> */}
+      <button onClick={Logout}>Log Out</button>
     </div>
   );
 };

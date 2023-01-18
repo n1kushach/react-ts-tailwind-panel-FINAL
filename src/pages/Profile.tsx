@@ -14,7 +14,7 @@ const Profile = () => {
   return (
     <>
       
-          <div id='profile' className='ml-auto mr-auto bg-custom-hex3 w-[60%] mt-[50px] mb-[50px] rounded-lg border-b-4 border-r-4 pl-[20px] pt-[20px]'>
+          <div id='profile' className='ml-auto flex flex-col gap-10 py-5 mr-auto bg-custom-hex3 w-[60%] mt-[50px] mb-[50px] rounded-lg border-b-4 border-r-4 pl-[20px] pt-[20px]'>
             <ImageSelector editing={editing} imageUrl={imageUrl} setImageUrl={setImageUrl} />
             <p>{`Name: ${firstName} ${lastName}`}</p>
             <p>Age: {age}</p>
