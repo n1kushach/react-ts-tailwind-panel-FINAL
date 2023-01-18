@@ -61,7 +61,7 @@ export const EditForm = (props: Props) => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-scroll">
       <div className="w-full">
         <div className="w-full">
           <div className="w-3/4 mx-auto mt-5">
