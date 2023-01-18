@@ -4,6 +4,7 @@
 
 :root {
   background-color: rgb(251, 251, 251);
+  height: max-content;
 } 
 
 .bg-custom-hex {
@@ -19,5 +20,9 @@
 }
 
 #profile {
+  border-color: #001011;
+}
+
+#profile2 {
   border-color: #001011;
 }
